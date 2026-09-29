@@ -1,0 +1,29 @@
+{
+  "name": "salaryml",
+  "version": "1.0.0",
+  "description": "Advanced Compensation Intelligence Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx live-server --port=8000 --host=localhost",
+    "build": "echo 'No build process needed - static files ready'",
+    "serve": "npx serve -s . -p 8000"
+  },
+  "keywords": [
+    "salary",
+    "compensation",
+    "negotiation",
+    "ml",
+    "tech",
+    "career"
+  ],
+  "author": "SalaryML Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

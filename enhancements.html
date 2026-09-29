@@ -1,0 +1,121 @@
+<!-- Voice Recording Feature -->
+<div class="voice-recorder" id="voiceRecorder">
+  <button class="voice-btn" id="voiceBtn" onclick="toggleVoiceRecording()">
+    <span class="voice-icon">🎤</span>
+    <span class="voice-text">Start Voice Recording</span>
+  </button>
+  <div class="voice-feedback" id="voiceFeedback" style="display:none">
+    <div class="voice-wave">🔊 Recording...</div>
+    <div class="voice-timer" id="voiceTimer">00:00</div>
+  </div>
+  <div class="voice-manager" id="voiceManager" style="display:none;">
+    <h4>🎤 Voice Recordings</h4>
+    <div class="recordings-list" id="recordingsList"></div>
+    <button class="btn btn-outline" onclick="clearAllRecordings()" style="margin-top: 10px;">🗑️ Clear All</button>
+  </div>
+</div>
+
+<!-- Theme Toggle -->
+<div class="theme-toggle" id="themeToggle">
+  <button class="theme-btn" onclick="toggleTheme()">
+    <span class="theme-icon">🌙</span>
+    <span class="theme-text">Dark Mode</span>
+  </button>
+</div>
+
+<!-- Market Heat Map -->
+<div class="market-heatmap" id="marketHeatmap">
+  <div class="heatmap-container">
+    <h3>🌍 Global Salary Heat Map</h3>
+    <div class="heatmap-legend">
+      <span class="legend-low">$50K-100K</span>
+      <span class="legend-mid">$100K-150K</span>
+      <span class="legend-high">$150K-200K</span>
+      <span class="legend-vhigh">$200K+</span>
+    </div>
+    <div class="heatmap-grid" id="heatmapGrid">
+      <!-- Dynamic heat map will be generated here -->
+    </div>
+  </div>
+</div>
+
+<!-- Skill Assessment Tool -->
+<div class="skill-assessment" id="skillAssessment">
+  <div class="assessment-container">
+    <h3>🎓 AI Skill Assessment</h3>
+    <div class="skill-categories">
+      <div class="skill-category">
+        <h4>Technical Skills</h4>
+        <div class="skill-items">
+          <label><input type="checkbox" value="javascript"> JavaScript</label>
+          <label><input type="checkbox" value="python"> Python</label>
+          <label><input type="checkbox" value="react"> React</label>
+          <label><input type="checkbox" value="nodejs"> Node.js</label>
+          <label><input type="checkbox" value="aws"> AWS</label>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Experience Level</h4>
+        <div class="skill-items">
+          <label><input type="radio" name="experience" value="0-2"> 0-2 years</label>
+          <label><input type="radio" name="experience" value="3-5"> 3-5 years</label>
+          <label><input type="radio" name="experience" value="6-10"> 6-10 years</label>
+          <label><input type="radio" name="experience" value="10+"> 10+ years</label>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Industry Expertise</h4>
+        <div class="skill-items">
+          <label><input type="checkbox" value="fintech"> FinTech</label>
+          <label><input type="checkbox" value="healthcare"> Healthcare</label>
+          <label><input type="checkbox" value="ecommerce"> E-Commerce</label>
+          <label><input type="checkbox" value="saas"> SaaS</label>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="assessSkills()">🎯 Assess My Skills</button>
+    <div class="skill-results" id="skillResults" style="display:none">
+      <div class="skill-score" id="skillScore"></div>
+      <div class="skill-recommendations" id="skillRecommendations"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Progress Tracking -->
+<div class="progress-tracker" id="progressTracker">
+  <div class="progress-container">
+    <h3>📈 Negotiation Progress</h3>
+    <div class="progress-timeline" id="progressTimeline">
+      <div class="progress-item">
+        <div class="progress-date">Today</div>
+        <div class="progress-event">Started using SalaryML</div>
+        <div class="progress-status completed">✅</div>
+      </div>
+    </div>
+    <button class="btn btn-secondary" onclick="addProgressEvent()">+ Add Progress Event</button>
+  </div>
+</div>
+
+<!-- Advanced Analytics Dashboard -->
+<div class="analytics-dashboard" id="analyticsDashboard">
+  <div class="analytics-container">
+    <h3>📊 Career Analytics</h3>
+    <div class="analytics-grid">
+      <div class="analytics-card">
+        <h4>Salary Growth</h4>
+        <div class="analytics-value" id="salaryGrowth">+15.2%</div>
+        <div class="analytics-chart" id="growthChart"></div>
+      </div>
+      <div class="analytics-card">
+        <h4>Market Position</h4>
+        <div class="analytics-value" id="marketPosition">75th Percentile</div>
+        <div class="analytics-chart" id="positionChart"></div>
+      </div>
+      <div class="analytics-card">
+        <h4>Negotiation Success</h4>
+        <div class="analytics-value" id="negotiationSuccess">87%</div>
+        <div class="analytics-chart" id="successChart"></div>
+      </div>
+    </div>
+  </div>
+</div>
